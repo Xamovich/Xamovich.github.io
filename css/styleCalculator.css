@@ -1,0 +1,24 @@
+.center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+body {
+    background-color: rgba(240, 176, 241, 0.63);
+    line-height: 1.5;
+}
+
+p.tit {
+    font-style: italic;
+    font-size: 25px;
+}
+p.ot {
+    font-style: oblique;
+    font-size: 22px;
+    font-weight: bold;
+}
+p.a {
+    font-style: oblique;
+    font-size: 22px;
+    
+}

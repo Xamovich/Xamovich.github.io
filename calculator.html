@@ -1,0 +1,64 @@
+<html>
+<head> <title>Решение квадратного уравнения.</title>
+    <link rel="stylesheet" type="text/css" href="css/styleCalculator.css">
+</head>
+<body>
+    <script language="javascript">
+		<!--
+		function square_equation() {
+		  var a = document.square.square_a.value;
+		  var b = document.square.square_b.value;
+		  var c = document.square.square_c.value;
+		  var sol = document.getElementById("square_sol");
+		
+		  var d = b*b - 4*a*c;
+		  if ( d < 0 ) {
+			string = "<br>x<sub>1</sub> = (";  //пара комплексно-сопряженных корней//
+			string += - b/(2*a);
+			string += ", ";
+			string += Math.sqrt(-d)/(2*a);
+			string += "), x<sub>2</sub> = (";
+			string += - b/(2*a);
+			string += ", ";
+			string += - Math.sqrt(-d)/(2*a);
+			string += ").";
+		  } else {
+			  if ( d == 0 ) {
+				string = "<br>x<sub>1</sub> = x<sub>2</sub> = "; //два одинаковых вещественных корня//
+				string += -b/(2*a);
+				string += ".";
+			  } else {
+				string = "<br>x<sub>1</sub> = "; //два различных вещественных корня//
+				string += -b/(2*a) - Math.sqrt(d)/(2*a);
+				string += ", x<sub>2</sub> = ";
+				string += -b/(2*a) + Math.sqrt(d)/(2*a);
+				string += ".";
+			  }
+		  }
+		  sol.innerHTML = string;
+		}
+		-->
+		</script>
+    <div align ="center">
+		<p class = " tit"><b>Решение квадратного уравнения a&middot;x&sup2; + b&middot;x + c = 0.</b></p>
+    <form name="square" action="javascript:square_equation()">
+     <p class = "a"><input name="square_a" type="text" value=" " size="5">&middot;x&sup2+
+                    <input name="square_b" type="text" value=" " size="5">&middot;x+
+					<input name="square_c" type="text" value=" " size="5">= 0.
+	</p>
+     <input type="image" src="img/Button_f3.gif"
+alt="Кнопка с ссылкой на сервер"
+width="100"
+height="45"
+onmousedown="src='img/Button_f2.gif'"
+onmouseover="src='img/Button.gif'"
+onmouseout="src='img/Button_f3.gif'"
+onmouseup="src='img/Button_f3.gif'"
+onclick="LoadServ()">
+</form>
+<p class = "ot">Ответ: <span id="square_sol">Введите коэффициенты и нажмите на кнопку</span></p>
+    </div>
+
+</body>
+</html>
+<!--<input type="submit" value="посчитать">-->

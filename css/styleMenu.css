@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(240, 176, 241, 0.63);
+    line-height: 1.5;
+}
+.header {
+    width: 1276px;
+    margin: auto;
+    border: 3px solid rgb(10, 151, 194);
+    display: flex;
+    flex-wrap: wrap; /*перенос строки */
+    justify-content: space-between; /*прижимает содержимое к краям */
+    align-items: center; /*выравнивает элементы по центру на вертикальной */
+}
+.header .headerMenu ul, a {
+    text-decoration: none; /*убрал подчеркивание*/
+}
+.we a {
+    font-size: 24px;
+    border: 2px solid transparent;
+    padding: 5px 15px 5px 15px;
+    color: #000000;
+    transition: all .3s;
+}
+.header a:hover {
+    border-color: lightskyblue;
+}
+.header_logo {
+    
+    padding-left: 37px;
+    padding-top: 5px;
+}
+.header .headerMenu ul {
+    display: flex;
+    list-style: none;
+ }
+
+.header .headerMenu ul li+li {
+    margin-left: 20px;
+}
+
+.header_phone {
+    padding-right: 40px;
+}
+
+.Xamovich {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+.Menu {
+    height: 200px;
+    background-color: rgba(227, 147, 247, 0.459);
+}
+
+.Conteyner {
+    background-color: rgba(220, 220, 220, 0.692);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.leftBar {   
+    background-color: rgba(107, 7, 201, 0.719);
+   
+}
+
+.rightBar {   
+    background-color: rgba(107, 7, 201, 0.719);
+   
+}
+
+.leftBar_centr {
+    width: 250px;
+    background-color: rgba(112, 7, 59, 0.623);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.rightBar_centr {
+    width: 250px;
+    background-color: rgba(112, 7, 59, 0.623);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.centr_content {
+    width: 780px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: stretch;;
+    align-items: stretch;
+}
+
+.centr_header {
+    background-color: rgba(50, 85, 182, 0.644);
+    height: 300px;
+}
+
+.centr_content { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: rgba(149, 19, 209, 0.705);
+}
+
+.xa {
+    margin: 3px 3px 3px 3px;
+    height: 170px;
+    width: 170px;
+    background-color: rgba(63, 60, 65, 0.747);
+}
+
+.footer {
+    height: 150px;
+    background-color: rgba(78, 50, 104, 0.781);
+}
